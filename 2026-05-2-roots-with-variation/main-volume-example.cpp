@@ -3,13 +3,13 @@
 #include <cstdio>
 #include "./numerical_calculus_.h"
 
-
 double volumef (double h, double V);
 
 
 int main (int argc, char **argv)
 {
-    //double nr (double x0, double tol, long int nmax, fptr f, dptr d, double h)
+
+    //double nr_with_v (double x0, double v, double tol, long int nmax, fptrv f, dptrv d, double h)
     double x0 = 2;
     double tol = 1e-5;
     long int nmax = 1e10;

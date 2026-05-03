@@ -117,7 +117,7 @@ double nr (double x0, double tol, long int nmax, fptr f, dptr d, double h){
 
     if (std::fabs(d(x0, h, f))<1e-15){
 
-      std::println("deriv nula en x0");
+      std::print("deriv nula en x0, devuelvo x0:");
       return x0;
 
     }
@@ -152,7 +152,7 @@ double nr_with_v (double x0, double v, double tol, long int nmax, fptrv f, dptrv
 
     if (std::fabs(d(x0, v, h, f))<1e-15){
 
-      std::println("deriv nula en x0");
+      std::print("deriv nula en x0, devuelvo x0:");
       return x0;
 
     }
