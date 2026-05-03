@@ -17,7 +17,7 @@ long gcd (long a, long b){
     
     if (a<=b){
         ii = a;
-        while (a%ii != 0 || b%ii != 0){
+        while (a%ii != 0 || b%ii != 0){ //queremos que vaya pa abajo hasta que ambos res sean 0
             ii--;
         }
     }else{
