@@ -13,7 +13,7 @@ int main (int argc, char *argv[])
   double ALPHA = 2.9;
 
 
-  auto faux = [ALPHA](double x){ return foo(x, ALPHA); }; 
+  auto faux = [ALPHA](double x){ return foo(x, ALPHA); }; //lambda function capturing ALPHA
   double g5 = gauss5(A, B, faux);
  
   std::println("{:24.16e}", g5);
