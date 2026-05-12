@@ -21,10 +21,13 @@ double richardson_derivs (double x, double h, int p, fptr f, dptr d);
 double trapezoidal (double a, double b, int ninter, fptr f);
 double simpson (double a, double b, int ninter, fptr f);
 double richardson_integrals (double a, double b, int n, int p, fptr f, Iptr I);
+
+//https://pomax.github.io/bezierinfo/legendre-gauss.html
 double gauss3 (double a, double b, fptr f);
 double gauss5 (double a, double b, fptr f);
 double gauss7 (double a, double b, fptr f);
 double gauss11 (double a, double b, fptr f);
+
 
 double bracketing (double xmin, double xmax, double toler, long int nmax, fptr f); //si ya se onta
 double nr (double x0, double tol, long int nmax, fptr f, dptr d, double h);
