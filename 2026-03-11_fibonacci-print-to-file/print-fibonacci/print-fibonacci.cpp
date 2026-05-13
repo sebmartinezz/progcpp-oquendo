@@ -2,6 +2,8 @@
 #include <cmath>
 #include <cstdio>
 
+
+//imprimir el n-ésimo término de fibonacci
 void fibonacci (long maxterm, std::string fname);
 
 int main (int argc, char **argv){

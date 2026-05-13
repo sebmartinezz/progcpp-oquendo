@@ -2,6 +2,8 @@
 #include <cmath>
 #include <cstdio>
 
+
+//hacer un programa que imprima fibonacci hasta nmax y la suma de los pares de fibonacci menores a nmax
 long fibonacci (long nmax);
 
 int main( int argc, char **argv){
