@@ -1,2 +1,2 @@
 
-### este es un repositorio para los trabajos de métodos numéricos en c++
+### este es un repositorio para el curso de c++
