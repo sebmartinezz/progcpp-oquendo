@@ -31,17 +31,30 @@ int main (int argc, char **argv)
 
 
     double e = 1.602176634e-19;
+    double hteo = 6.62607015e-34;
+
     double n = xdata.size();
+
     vptr sumas = sumasE(xdata, ydata, n); //Ex, Exx, Ey, Eyy, Exy
     vptr info = m_b(sumas, n); //m , b, delta_m, delta_b
 
-    std::println("m  : {:25.16e}\nb  : {:25.16e}\ne_m: {:25.16e}\ne_b: {:25.16e}", info[0], info[1], info[2], info[3]);
-    
-    double hteo = 6.62607015e-34;
     double h = e*info[0];
     double e_h = std::fabs(1-h/hteo);
     double phi = -1* info[1];
-    std::println("h  : {:25.16e}\ne_h:{:25.16e}\nphi: {:25.16e}\n", h, e_h, phi);
+
+
+    std::println("{:-^70}", " resultados de la regresion ");
+    
+    std::println("{:<20} : {:>35.16e}", "m", info[0]);
+    std::println("{:<20} : {:>35.16e}", "b", info[1]);
+    std::println("{:<20} : {:>35.16e}", "error de m", info[2]);
+    std::println("{:<20} : {:>35.16e}", "error de b", info[3]);
+    
+    std::println("{:-^70}", " constantes calculadas ");
+
+    std::println("{:<20} : {:>35.16e} Js", "h", h);
+    std::println("{:<20} : {:>34.4f} %", "error relativo en h", e_h*100.0);
+    std::println("{:<20} : {:>35.16e} eV", "phi", phi);
 
     return 0;
 }
@@ -82,6 +95,6 @@ vptr m_b (vptr s, long N)
     double delta_m = std::sqrt(delta_mm);
     double delta_b = std::sqrt(delta_bb);
 
-    std::vector<double> i = {m, b, delta_m, delta_b};
-    return i;
+    std::vector<double> inf = {m, b, delta_m, delta_b};
+    return inf;
 }
