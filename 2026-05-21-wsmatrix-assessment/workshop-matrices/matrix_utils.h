@@ -1,0 +1,14 @@
+#pragma once
+#include <iostream>
+#include <vector>
+#include <cassert>
+
+void fill_matrix(std::vector<double> & data, int m, int n);
+void print_matrix(const std::vector<double> & data, int m, int n);
+void transpose_matrix(const std::vector<double> & indata, int m, int n, std::vector<double> & outdata);
+void matmul (const std::vector<double>&A, int mA, int nA,
+            const std::vector<double>&B, int mB, int nB,
+            std::vector<double>&C, int mC, int nC);
+double trace (std::vector<double>&A, int m, int n);
+void hilbert_fill (std::vector<double> & H, int m, int n);
+void matpow (std::vector<double> & A, int m, int n, std::vector<double>&Ap, int x, int y, int p);
