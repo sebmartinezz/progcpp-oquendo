@@ -60,7 +60,7 @@ void print_matrix(const std::valarray<double> & data, int m, int n)
     for (int jj = 0; jj < n; ++jj) {
       std::cout << data[ii*n + jj] << " ";
     }
-    std::cout << "\n";
+    std::cout << " "; //no salto linea para que el vector salga horizontal :)
   }
   std::cout << "\n";
 }
