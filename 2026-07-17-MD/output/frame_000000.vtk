@@ -1,0 +1,25 @@
+# vtk DataFile Version 2.0
+Particle simulation - Time: 1.000000 s
+ASCII
+DATASET UNSTRUCTURED_GRID
+POINTS 1 float
+-9.23952966e-01 0.00000000e+00 -1.69075916e+00
+CELLS 1 2
+1 0
+CELL_TYPES 1
+1
+POINT_DATA 1
+VECTORS velocity float
+-7.93227885e+00 0.00000000e+00 1.32365899e+00
+SCALARS kinetic_energy float 1
+LOOKUP_TABLE default
+1.08974209e+01
+SCALARS speed float 1
+LOOKUP_TABLE default
+8.04196001e+00
+SCALARS radius float 1
+LOOKUP_TABLE default
+1.03000000e-01
+SCALARS mass float 1
+LOOKUP_TABLE default
+3.37000000e-01
